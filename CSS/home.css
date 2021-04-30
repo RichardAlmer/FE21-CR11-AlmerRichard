@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(116, 185, 253);
+}
+
+#header{
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 170px 1fr 80px 170px;
+    grid-template-rows: 15px 30px 30px 30px 15px;
+    grid-template-areas: '. . . .' 'nav1 head userImg userName' 'nav2 head userImg userNav1' 'nav3 head userImg userNav2' '. . . .';
+    padding: 0 20px;
+}
+
+.userImage{
+    width: 90px;
+    height: 90px;
+    grid-area: userImg;
+    align-self: center;
+}
+
+#userName{
+    grid-area: userName;
+    justify-self: center;
+}
+
+#userNav1{
+    grid-area: userNav1;
+    justify-self: center;
+    text-decoration: none;
+}
+
+#userNav2{
+    grid-area: userNav2;
+    justify-self: center;
+    text-decoration: none;
+}
+
+#head{
+    grid-area: head;
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+
+#all{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 2em;
+}
+
+.table{
+    margin-top: 2em;
+}
+
+td {          
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr {
+    text-align: center;
+}
+
+#aHome{
+    grid-area: nav1;
+    justify-self: center;
+    text-decoration: none;
+    color: yellow;
+}
+#aHome:hover{
+    color: rgba(255, 255, 0, 0.591);
+}
+
+#aSeniors{
+    grid-area: nav2;
+    justify-self: center;
+    text-decoration: none;
+    color: yellow;
+}
+#aSeniors:hover{
+    color: rgba(255, 255, 0, 0.591);
+}
+
+#aSpecies{
+    grid-area: nav3;
+    justify-self: center;
+    text-decoration: none;
+    color: yellow;
+}
+#aSpecies:hover{
+    color: rgba(255, 255, 0, 0.591);
+}
